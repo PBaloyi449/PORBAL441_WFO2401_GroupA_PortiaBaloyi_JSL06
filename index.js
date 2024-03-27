@@ -19,8 +19,14 @@ function displayMenuItems(menu) {
         // Set the text content of the category element to the category name
         categoryElement.textContent = category;
 
+        
+        //Create an h3 element to represent the category
+        const categoryHeading = document.createElement("h3");
+        categoryHeading.textContent = category;
+
         // Append the category element to the menu container
         menuContainer.appendChild(categoryElement);
+        menuContainer.appendChild(categoryHeading);
 
         // Create an element to represent a list of items
         const listItems = document.createElement("ul");
@@ -52,7 +58,7 @@ function displayMenuItems(menu) {
 function addToOrder(itemName) {
     // Get the order items list and the order total element from the HTML
     const orderItemsList = document.getElementById("order-items");
-    const totalElement = document.getElementById("order-total");
+    //const totalElement = document.getElementById("order-total");
 
     // Create a list item for the order
     const orderListItem = document.createElement("li");
