@@ -14,10 +14,9 @@ function displayMenuItems(menu) {
     for (const category in menu) {
         // Create an element to represent the category
         const categoryElement = document.createElement("div");
-        categoryElement.classList.add("category");
+    
 
         // Set the text content of the category element to the category name
-        categoryElement.textContent = category;
 
         
         //Create an h3 element to represent the category
@@ -58,7 +57,7 @@ function displayMenuItems(menu) {
 function addToOrder(itemName) {
     // Get the order items list and the order total element from the HTML
     const orderItemsList = document.getElementById("order-items");
-    //const totalElement = document.getElementById("order-total");
+    const totalElement = document.getElementById("order-total");
 
     // Create a list item for the order
     const orderListItem = document.createElement("li");
@@ -71,8 +70,8 @@ function addToOrder(itemName) {
 
     // Calculate and update the total price
     let total = parseFloat(totalElement.textContent);
-    // Assuming each item has a fixed price of $10 for simplicity
-    total += 10;
+    // Assuming each item has a fixed price of R60 for simplicity
+    total += 60;
 
     // Update the text content of the order total element with the new total
     totalElement.textContent = total.toFixed(2);
