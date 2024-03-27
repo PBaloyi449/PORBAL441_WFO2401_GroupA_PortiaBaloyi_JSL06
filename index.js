@@ -2,7 +2,9 @@
 const menu = {
     Starters: ["Garlic Bread", "Bruschetta"],
     MainCourses: ["Margherita Pizza", "Spaghetti Carbonara"],
-    Desserts: ["Tiramisu", "Cheesecake"]
+    Desserts: ["Tiramisu", "Cheesecake"],
+    Drinks:["Milk-Shake", "Wine","Coke","Coffee", "Rooibos", "Juice"],
+    Kiddies: ["Burgers & Fries", "Ribs & Fries", "Chicken Strips"]
 };
 
 // Function to display menu items by category
